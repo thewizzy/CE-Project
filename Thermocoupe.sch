@@ -36,7 +36,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 8
 Title ""
-Date "21 sep 2013"
+Date "26 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,4 +48,12 @@ Text HLabel 8500 3200 2    60   Input ~ 0
 TC IN +
 Text HLabel 8500 3450 2    60   Input ~ 0
 TC IN -
+Text HLabel 3600 2550 0    60   Input ~ 0
+MOSI
+Text HLabel 3600 2700 0    60   Output ~ 0
+MISO
+Text HLabel 3600 2850 0    60   Input ~ 0
+SCLK
+Text HLabel 3600 3000 0    60   Input ~ 0
+/CS
 $EndSCHEMATC
