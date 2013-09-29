@@ -29,15 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:relay_spdt
+LIBS:BenchBuddy
 LIBS:CE-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 9
 Title ""
-Date "26 sep 2013"
+Date "29 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
