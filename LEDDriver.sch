@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 9
 Title ""
-Date "29 sep 2013"
+Date "30 sep 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,12 +45,177 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2650 2100 0    60   Input ~ 0
-EN
-Text HLabel 2650 2350 0    60   Input ~ 0
-Freq
-Text HLabel 5550 2050 2    60   Output ~ 0
+Text HLabel 3000 2250 0    60   Input ~ 0
+LED_EN_PWM
+Text HLabel 8200 1350 2    60   Output ~ 0
 String+
-Text HLabel 5550 2200 2    60   Input ~ 0
+Text HLabel 8200 2350 2    60   Input ~ 0
 String-
+$Comp
+L AP5726 U?
+U 1 1 52497097
+P 4100 2250
+F 0 "U?" H 3850 2050 60  0000 C CNN
+F 1 "AP5726" H 4100 2250 60  0000 C CNN
+F 2 "" H 4100 2050 60  0000 C CNN
+F 3 "" H 4100 2050 60  0000 C CNN
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2250 3450 2250
+$Comp
+L GND #PWR?
+U 1 1 524970AC
+P 4100 3100
+F 0 "#PWR?" H 4100 3100 30  0001 C CNN
+F 1 "GND" H 4100 3030 30  0001 C CNN
+F 2 "" H 4100 3100 60  0000 C CNN
+F 3 "" H 4100 3100 60  0000 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2850 4100 2950
+Wire Wire Line
+	4100 2950 4100 3100
+$Comp
+L +5V #PWR?
+U 1 1 524972CC
+P 3300 1250
+F 0 "#PWR?" H 3300 1340 20  0001 C CNN
+F 1 "+5V" H 3300 1340 30  0000 C CNN
+F 2 "" H 3300 1250 60  0000 C CNN
+F 3 "" H 3300 1250 60  0000 C CNN
+	1    3300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 524972D9
+P 3300 1950
+F 0 "#PWR?" H 3300 1950 30  0001 C CNN
+F 1 "GND" H 3300 1880 30  0001 C CNN
+F 2 "" H 3300 1950 60  0000 C CNN
+F 3 "" H 3300 1950 60  0000 C CNN
+	1    3300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 524972EB
+P 3300 1650
+F 0 "C?" H 3300 1750 40  0000 L CNN
+F 1 "C" H 3306 1565 40  0000 L CNN
+F 2 "~" H 3338 1500 30  0000 C CNN
+F 3 "~" H 3300 1650 60  0000 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1250 3300 1350
+Wire Wire Line
+	3300 1350 3300 1450
+Wire Wire Line
+	3300 1850 3300 1950
+Wire Wire Line
+	3300 1350 3950 1350
+Wire Wire Line
+	3950 1350 4100 1350
+Wire Wire Line
+	3950 1350 3950 1650
+Connection ~ 3300 1350
+$Comp
+L C C?
+U 1 1 52497315
+P 7750 1800
+F 0 "C?" H 7750 1900 40  0000 L CNN
+F 1 "C" H 7756 1715 40  0000 L CNN
+F 2 "~" H 7788 1650 30  0000 C CNN
+F 3 "~" H 7750 1800 60  0000 C CNN
+	1    7750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5249731D
+P 4400 1350
+F 0 "L?" V 4350 1350 40  0000 C CNN
+F 1 "INDUCTOR" V 4500 1350 40  0000 C CNN
+F 2 "~" H 4400 1350 60  0000 C CNN
+F 3 "~" H 4400 1350 60  0000 C CNN
+	1    4400 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3950 1350
+Wire Wire Line
+	4250 1650 4250 1500
+Wire Wire Line
+	4250 1500 4900 1500
+Wire Wire Line
+	4900 1500 4900 1350
+Wire Wire Line
+	4700 1350 4900 1350
+Wire Wire Line
+	4900 1350 5000 1350
+$Comp
+L DIODESCH D?
+U 1 1 5249733F
+P 5200 1350
+F 0 "D?" H 5200 1450 40  0000 C CNN
+F 1 "DIODESCH" H 5200 1250 40  0000 C CNN
+F 2 "~" H 5200 1350 60  0000 C CNN
+F 3 "~" H 5200 1350 60  0000 C CNN
+	1    5200 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 1350
+Wire Wire Line
+	5400 1350 5650 1350
+Wire Wire Line
+	5650 1350 7750 1350
+Wire Wire Line
+	7750 1350 8200 1350
+Wire Wire Line
+	7750 1350 7750 1600
+$Comp
+L GND #PWR?
+U 1 1 52497391
+P 7750 2150
+F 0 "#PWR?" H 7750 2150 30  0001 C CNN
+F 1 "GND" H 7750 2080 30  0001 C CNN
+F 2 "" H 7750 2150 60  0000 C CNN
+F 3 "" H 7750 2150 60  0000 C CNN
+	1    7750 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7750 1350
+Wire Wire Line
+	7750 2150 7750 2000
+Wire Wire Line
+	4750 2150 5650 2150
+Wire Wire Line
+	5650 2150 5650 1350
+Connection ~ 5650 1350
+$Comp
+L R R?
+U 1 1 524973D0
+P 5250 2600
+F 0 "R?" V 5330 2600 40  0000 C CNN
+F 1 "R" V 5257 2601 40  0000 C CNN
+F 2 "~" V 5180 2600 30  0000 C CNN
+F 3 "~" H 5250 2600 30  0000 C CNN
+	1    5250 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 2850 5250 2950
+Wire Wire Line
+	5250 2950 4100 2950
+Connection ~ 4100 2950
+Wire Wire Line
+	4750 2350 5250 2350
+Wire Wire Line
+	5250 2350 8200 2350
+Connection ~ 5250 2350
 $EndSCHEMATC
