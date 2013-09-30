@@ -35,7 +35,7 @@ EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 9 9
 Title ""
 Date "30 sep 2013"
 Rev ""
@@ -46,15 +46,15 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 10300 2850 2    60   Output ~ 0
-Power+
-Text HLabel 10300 3050 2    60   Input ~ 0
-Power-
+FAN_OUT+
+Text HLabel 10300 3050 2    60   Output ~ 0
+FAN_OUT-
 Text HLabel 10350 5000 2    60   Input ~ 0
-Tach
+TACH_IN
 Text HLabel 9600 5000 0    60   Output ~ 0
-Tach_Out
+TACH_MEAS
 Text HLabel 3600 3300 0    60   Input ~ 0
-Fan_In
+/FAN_EN
 $Comp
 L LM324 U?
 U 1 1 52443081
@@ -222,7 +222,7 @@ $EndComp
 Wire Wire Line
 	10350 5000 9600 5000
 Text HLabel 8800 3200 0    60   Output ~ 0
-Current_Measure
+CURR_MEAS
 Wire Wire Line
 	8800 3200 9500 3200
 Connection ~ 9500 3200
